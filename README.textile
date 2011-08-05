@@ -6,9 +6,9 @@ h2. Установка
 
 *Необходимые зависимости:* хак "launchpad":http://www.the-ebook.org/forum/viewtopic.php?p=587494#587494
 
-# Отредактировать @quote2tumblr.sh@, записав свои данные для входа в переменные TMB_USER и TMB_PASS.
-# Скопировать @quote2tumblr.sh@ в каталог _/launchpad_ Киндла.
-# Открыть файл _/launchpad/servicecmds.ini_ и добавить в конец две строки:
+# Отредактировать quote2tumblr.sh, записав свои данные для входа в переменные @TMB_USER@ и @TMB_PASS@.
+# Скопировать quote2tumblr.sh в каталог */launchpad* Киндла.
+# Открыть файл */launchpad/servicecmds.ini* и добавить в конец две строки:
 <pre>;; Post last quote to tumblr.com
 Shift Q = !/bin/ash /mnt/us/launchpad/quote2tumblr.sh</pre>
 Последней строчкой мы привязали запуск скрипта к сочетанию клавиш Shift Shift Q (нажимать кнопки надо последовательно и быстро).
