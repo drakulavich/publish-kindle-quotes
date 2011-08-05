@@ -1,7 +1,3 @@
 h2. Скачать
 
-Последняя версия скрипта доступна по ссылке...
-
-h2. Благодарности
-
-* Test
+Последняя версия скрипта доступна "по ссылке":https://github.com/drakulavich/publish-kindle-quotes/raw/master/quote2tumblr.sh
