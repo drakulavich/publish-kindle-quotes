@@ -9,8 +9,9 @@ h2. Установка
 # Отредактировать @quote2tumblr.sh@, записав свои данные для входа в переменные TMB_USER и TMB_PASS.
 # Скопировать @quote2tumblr.sh@ в каталог _/launchpad_ Киндла.
 # Открыть файл _/launchpad/servicecmds.ini_ и добавить в конец две строки:
-@;; Post last quote to tumblr.com
-Shift Q = !/bin/ash /mnt/us/launchpad/quote2tumblr.sh@
+pre. ;; Post last quote to tumblr.com
+Shift Q = !/bin/ash /mnt/us/launchpad/quote2tumblr.sh
+
 Последней строчкой мы привязали запуск скрипта к сочетанию клавиш Shift Shift Q (нажимать кнопки надо последовательно и быстро).
 # Launchpad следует перезапустить, чтобы новое сочетание вступило в силу нажимаем: *Shift Shift Space*
 
