@@ -1,3 +1,20 @@
 h2. Скачать
 
-Последняя версия скрипта доступна "по ссылке":https://github.com/drakulavich/publish-kindle-quotes/raw/master/quote2tumblr.sh
+Последняя версия скрипта доступна "по ссылке":https://github.com/drakulavich/publish-kindle-quotes/raw/master/quote2tumblr.sh.
+
+h2. Установка
+
+*Необходимые зависимости:* хак "launchpad":http://www.the-ebook.org/forum/viewtopic.php?p=587494#587494
+
+# Отредактировать @quote2tumblr.sh@, записав свои данные для входа в переменные TMB_USER и TMB_PASS.
+# Скопировать @quote2tumblr.sh@ в каталог _/launchpad_ Киндла.
+# Открыть файл _/launchpad/servicecmds.ini_ и добавить в конец две строки:
+@;; Post last quote to tumblr.com
+Shift Q = !/bin/ash /mnt/us/launchpad/quote2tumblr.sh@
+Последней строчкой мы привязали запуск скрипта к сочетанию клавиш Shift Shift Q (нажимать кнопки надо последовательно и быстро).
+# Launchpad следует перезапустить, чтобы новое сочетание вступило в силу нажимаем: *Shift Shift Space*
+
+h2. Использование
+
+# Выберите в книге подходящее умозаключение и стандартными средствами сделайте вырезку: нажать центральную кнопку джойстика, стрелками указали начальную позицию в тексте, подтвердить центральной кнопкой и аналогичным способом закончить выделение.
+# С включенной сетью (Wi-Fi/3G) нажмите сочетание *Shift Shift Q*. Вуаля! Новое сообщение должно появиться в блоге.
