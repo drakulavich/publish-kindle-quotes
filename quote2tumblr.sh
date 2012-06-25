@@ -1,10 +1,13 @@
 #!/bin/ash
-# Your Datas
+# Your login details
 TMB_USER='user@mail.addres';
 TMB_PASS='password';
 
 # What to Write
 TMB_TYPE='quote';
+
+# Send to twitter
+TWEET='auto';
 
 # Get quotes
 CLIPPINGSFILE='/mnt/us/documents/My Clippings.txt';
@@ -19,9 +22,9 @@ if [ -f "$CLIPPINGSFILE" ]; then # file exists?
 fi
 fi
 
-# Post quote to blog
+# Post quote to blog via curl
 if [ "$TMB_SRC" != "" ]; then
 	curl -s \
-	-d "email=$TMB_USER&password=$TMB_PASS&type=$TMB_TYPE&quote=$TMB_QUOTE&source=$TMB_SRC&generator=shell" \
+	-d "email=$TMB_USER&password=$TMB_PASS&type=$TMB_TYPE&quote=$TMB_QUOTE&source=$TMB_SRC&send-to-twitter=$TWEET&generator=kindle" \
 	"http://www.tumblr.com/api/write" > /dev/null	
 fi
